@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="container">
+    <h1>Sonic Survey!</h1>
+    <p>Please answer all questions.</p>
+
+    <form>
+        <div class="userInfo">
+            <label for="name">Name *:</label>
+            <input
+                placeholder="John Doe"
+                type="text"
+                id="name"
+                name="name"
+                required
+            />
+        </div>
+        <div class="userInfo">
+            <label for="email">Email *:</label>
+            <input
+                placeholder="JohnD@gmail.com"
+                type="email"
+                id="email"
+                name="email"
+                required
+            />
+        </div>
+
+        <div class="userInfo">
+            <label for="phone">Phone Number:</label>
+            <input
+                placeholder="123-456-7890"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="\d{3}-\d{3}-\d{4}"
+            />
+        </div>
+        <div class="userInfo">
+            <label for="ssn">SSN *:</label>
+            <input
+                placeholder="123-45-6789"
+                type="text"
+                id="ssn"
+                name="ssn"
+                pattern="\d{3}-\d{2}-\d{4}"
+                required
+            />
+        </div>
+
+        <!-- Favorite Character ^w^ -->
+        <fieldset id="favoriteChar">
+            <legend>Please select your favorite Character:</legend>
+            <div>
+                <input type="radio" id="Sonic" name="character" value="Sonic" />
+                <label for="Sonic">Sonic</label>
+            </div>
+            <div>
+                <input type="radio" id="Tails" name="character" value="Tails" />
+                <label for="Tails">Tails</label>
+            </div>
+            <div>
+                <input type="radio" id="Knuckles" name="character" value="Knuckles" />
+                <label for="Knuckles">Knuckles</label>
+            </div>
+            <div>
+                <input type="radio" id="Shadow" name="character" value="Shadow" />
+                <label for="Shadow">Shadow</label>
+            </div>
+            <div>
+                <input type="radio" id="Amy" name="character" value="Amy" />
+                <label for="Amy">Amy</label>
+            </div>
+            <div>
+                <input type="radio" id="Big" name="character" value="Big" />
+                <label for="Big">Big</label>
+            </div>
+            <div>
+                <input type="radio" id="Egg-Man" name="character" value="Egg-Man" />
+                <label for="Egg-Man">Egg-Man</label>
+            </div>
+            <div>
+                <input type="radio" id="Jet" name="character" value="Jet" />
+                <label for="Jet">Jet</label>
+            </div>
+            <div>
+                <input type="radio" id="Metal-Sonic" name="character" value="Metal-Sonic" />
+                <label for="Metal-Sonic">Metal-Sonic</label>
+            </div>
+            <div>
+                <input type="radio" id="Silver" name="character" value="Silver" />
+                <label for="Silver">Silver</label>
+            </div>
+        </fieldset>
+
+        <!-- Favorite 2D Game ^o^ -->
+        <fieldset id="2D-Game">
+            <legend>Please select your favorite 2D Game:</legend>
+            <div>
+                <input type="radio" id="Sonic-1" name="2D" value="Sonic-1" />
+                <label for="Sonic-1">Sonic-1</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-2" name="2D" value="Sonic-2" />
+                <label for="Sonic-2">Sonic-2</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-3-Knuckles" name="2D" value="Sonic-3 & Knuckles" />
+                <label for="Sonic-3-Knuckles">Sonic-3 & Knuckles</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-CD" name="2D" value="Sonic CD" />
+                <label for="Sonic-CD">Sonic CD</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-4-Series" name="2D" value="Sonic 4 Series" />
+                <label for="Sonic-4-Series">Sonic 4 Series</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Advance-Series" name="2D" value="Sonic Advance Series" />
+                <label for="Sonic-Advance-Series">Sonic Advance Series</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Rush-Series" name="2D" value="Sonic Rush Series" />
+                <label for="Sonic-Rush-Series">Sonic Rush Series</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Super-Stars" name="2D" value="Sonic Super-Stars" />
+                <label for="Sonic-Super-Stars">Sonic Super-Stars</label>
+            </div>
+        </fieldset>
+
+        <!-- Favorite 3D Game ^m^ -->
+        <fieldset id="3D-Games">
+            <legend>Please select your favorite 3D Game:</legend>
+            <div>
+                <input type="radio" id="Sonic-Adventure-1" name="3D" value="Sonic Adventure 1" />
+                <label for="Sonic-Adventure-1">Sonic Adventure 1</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Adventure-2" name="3D" value="Sonic Adventure 2" />
+                <label for="Sonic-Adventure-2">Sonic Adventure 2</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Heroes" name="3D" value="Sonic Heroes" />
+                <label for="Sonic-Heroes">Sonic Heroes</label>
+            </div>
+            <div>
+                <input type="radio" id="Shadow-The-Hedgehog" name="3D" value="Shadow The Hedgehog" />
+                <label for="Shadow-The-Hedgehog">Shadow The Hedgehog</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-The-Hedgehog-2006" name="3D" value="Sonic The Hedgehog (2006)" />
+                <label for="Sonic-The-Hedgehog-2006">Sonic The Hedgehog (2006)</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-and-the-Secret-Rings" name="3D" value="Sonic and the Secret Rings" />
+                <label for="Sonic-and-the-Secret-Rings">Sonic and the Secret Rings</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Unleashed" name="3D" value="Sonic Unleashed" />
+                <label for="Sonic-Unleashed">Sonic Unleashed</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-and-the-Black-Knight" name="3D" value="Sonic and the Black Knight" />
+                <label for="Sonic-and-the-Black-Knight">Sonic and the Black Knight</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Colors" name="3D" value="Sonic Colors" />
+                <label for="Sonic-Colors">Sonic Colors</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Generations" name="3D" value="Sonic Generations" />
+                <label for="Sonic-Generations">Sonic Generations</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Lost-World" name="3D" value="Sonic Lost-World" />
+                <label for="Sonic-Lost-World">Sonic Lost-World</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Forces" name="3D" value="Sonic Forces" />
+                <label for="Sonic-Forces">Sonic Forces</label>
+            </div>
+            <div>
+                <input type="radio" id="Sonic-Frontiers" name="3D" value="Sonic Frontiers" />
+                <label for="Sonic-Frontiers">Sonic Frontiers</label>
+            </div>
+        </fieldset>
+
+        <div class="containerButton">
+            <button type="submit">Submit Survey</button>
+        </div>
+    </form>
+</body>
+
+ <!-- Completed in: 2hrs 35mins :3 -->
+</html>
